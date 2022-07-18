@@ -11,9 +11,7 @@ import QuestionCompOne from '../components/quiz-components/QuestionCompOne'
 import SportsQuiz from '../components/quiz-components/SportsQuiz'
 import ScienceAndNature from '../components/quiz-components/ScienceAndNature'
 import HistoryQuiz from '../components/quiz-components/HistoryQuiz'
-import ScienceAndMathematics from '../components/quiz-components/ScienceAndMathematics'
 import ScienceAndComputers from '../components/quiz-components/ScienceAndComputers'
-import Gadgets from "../components/quiz-components/Gadgets"
 const RoutesComponent = () => {
   return (
     <Routes>
@@ -28,9 +26,7 @@ const RoutesComponent = () => {
     <Route path='/celebrities-quiz' element={<CelebritiesQuiz / >} / >
     <Route path='/science-and-nature' element={<ScienceAndNature / >} / >
     <Route path='/history' element={< HistoryQuiz / >} / >
-    <Route path='/science-and-mathematics' element={<ScienceAndMathematics/ >} / >
    <Route path='/science-and-computers' element={<ScienceAndComputers / >} / >
-   <Route path='/gadgets' element={<Gadgets / >} / >
     </Routes>
   )
 }

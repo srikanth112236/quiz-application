@@ -1,7 +1,7 @@
 .navbar{
     display: flex;
     min-height: 12vh;
-    justify-content: space-bet;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(254, 254, 254);
 }
@@ -13,6 +13,9 @@
 }
 .quiz-links li{
     list-style-type: none;
+    position: relative;
+    right: 22px;
+    font-size: 22px;
 }
 .user{
     color: #000;
@@ -37,4 +40,26 @@
     position: absolute;
     left: -60px;
     font-size: 28px;
+}
+
+@media screen and (max-width:568px){
+    .quiz-links li {
+        list-style-type: none;
+        position: relative;
+        right: 22px;
+        font-size: 18px;
+    }
+    .user{
+        width: 40px;height: auto;border-radius: 35px;
+        
+      }
+      .user img{
+        width: 100%;
+        height: 40px;
+        border-radius: 35px;
+        
+    }
+    .logo-title{
+        font-size: 20px;
+    }
 }

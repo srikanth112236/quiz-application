@@ -35,7 +35,7 @@ const HistoryQuiz = () => {
 							<h3 className='mt-3 mb-2'  >Books Quiz</h3>
 							<p className='mt-3 mb-1' >Play Popular Quizs online without instalation</p>
 							<div className='return-links'>
-								<Link to='/films' className='text-decoration-none' >Entertainment Films</Link>
+								<Link to='/science-and-computers' className='text-decoration-none' >Science And Computers</Link>
 								<Link to='/quiz-home' className='text-decoration-none'><button className='retake ps-3 pe-5'> <i className="fa-solid fa-rotate-right  ps-2 pe-2 me-2 ms-3"></i> Tetake</button></Link> 
 
 							</div>

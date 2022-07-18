@@ -98,22 +98,7 @@ const HomeComp = () => {
       <Link to='/science-and-computers' className='text-decoration-none'><h3 className='test-title'>Science And Computers </h3></Link>
     </div>
   </div>
-  <div className='category-1 col-md-6'>
-    <div className='category-logo'>
-    <Link to='/science-and-mathematics'><img src={IconFive} alt='' /></Link>
-    </div>
-    <div className='category-test'>
-      <Link to='/science-and-mathematics' className='text-decoration-none'><h3 className='test-title'>Science And Mathematics </h3></Link>
-    </div>
-  </div>
-  <div className='category-1 col-md-6'>
-  <div className='category-logo'>
-  <Link to='/gadgets'><img src={IconTHree} alt='' /></Link>
-  </div>
-  <div className='category-test'>
-    <Link to='/gadgets' className='text-decoration-none'><h3 className='test-title'>Gadgets </h3></Link>
-  </div>
-</div>  
+ 
         </div>
 
       </div>

@@ -7,12 +7,12 @@ const AnimalsQuiz = () => {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	const [scoreData,setScoreData] = ('')
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
 			setScore(score + 1);
 		}
-
 		const nextQuestion = currentQuestion + 1;
 		if (nextQuestion < AnimalsData.length) {
 			setCurrentQuestion(nextQuestion);
@@ -20,6 +20,7 @@ const AnimalsQuiz = () => {
 			setShowScore(true);
 		}
 	};
+
 	return (
 		<div className='questions'>
 		<div className='question-comp'>
@@ -30,12 +31,12 @@ const AnimalsQuiz = () => {
 
 				<p className='result '>Your Result</p>
 						<p className='score' >Your IQ is {score / 20 * 100}  </p>
-						<p className='score-details'>In this test You have answered {score} correct answers from  {AnimalsData.length} </p>
+						<p className='score-details'> In this test You have answered {score} correct answers from  {AnimalsData.length} </p>
 						<div className=''>
 							<h3 className='mt-3 mb-2'  >Books Quiz</h3>
 							<p className='mt-3 mb-1' >Play Popular Quizs online without instalation</p>
 							<div className='return-links'>
-								<Link to='/films' className='text-decoration-none' >Entertainment Films</Link>
+								<Link to='/celebrities-quiz' className='text-decoration-none' >Celebrities</Link>
 								<Link to='/quiz-home' className='text-decoration-none'><button className='retake ps-3 pe-5'> <i className="fa-solid fa-rotate-right  ps-2 pe-2 me-2 ms-3"></i> Tetake</button></Link> 
 
 							</div>
@@ -56,8 +57,8 @@ const AnimalsQuiz = () => {
 			) : (
 				<>
 					<div className='question-section'>
-					<Link to='/quiz-home' className='text-decoration-none'><button className='return-to-home'> <i className="fa-solid fa-arrow-left me-3"></i> Back To Home </button></Link> 
 						<div className='question-count'>
+						<Link to='/quiz-home' className='text-decoration-none'><button className='return-to-home'> <i className="fa-solid fa-arrow-left me-3"></i> Back To Home </button></Link> 
 
 							<span>Question {currentQuestion + 1}</span>/{AnimalsData.length}
 						</div>

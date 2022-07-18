@@ -46,6 +46,8 @@ const Home = () => {
                             </li>
                             <li> Intellectual and IQ tests will evaluate the maximum capacity of your brain.</li>
                             <li>Career tests will help you choose a profession properly.</li>
+                        <Link to='/quiz-home'  className='slide-btn text-decoration-none' >Test Me !</Link >
+
                         </ul>   </div>
                 </div>
             </div>
@@ -98,6 +100,8 @@ const Home = () => {
             <ul className='slide2-content'>
                 <li>Our resource contains all the popular psychological tests that will tell you about your abilities, weaknesses, and personality traits. We constantly check and improve the quality of tests so that they meet modern requirements for psychological methods and educational tests. You can test your childs IQ with the pictorial test, or carry out a comprehensive analysis of the drawings of everyone in your family and learn about their hidden fears and problems. Also, with the help of educational tests, you can determine and improve your level of knowledge in various areas.
                 It is convenient, so you can take tests on your phone or computer as well as on the app.</li>
+                <Link to='/quiz-home'  className='slide-btn text-decoration-none' >Test Me !</Link >
+
                 </ul>
                </div>
                <div className='slide-logo col-md-6 col-sm-6'>
